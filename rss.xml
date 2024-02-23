@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Yahya Anwar</title>
+      <link>/draft-mode</link>
+      <description>Blognya Yahya</description>
+      <generator>Zola</generator>
+      <language>id</language>
+      <atom:link href="/draft-mode/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 09 Feb 2024 00:00:00 +0000</lastBuildDate>
+      <item>
+          <title>My Development Workspace Setup</title>
+          <pubDate>Fri, 09 Feb 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>/draft-mode/journal/development-workspace-setup/</link>
+          <guid>/draft-mode/journal/development-workspace-setup/</guid>
+          <description>&lt;p&gt;&lt;a href=&quot;&#x2F;draft-mode&#x2F;journal&#x2F;development-workspace-setup&#x2F;#footnote&quot;&gt;goto footnote&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Hardware (SET 1)&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#1&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lenovo Thinkpad X??&lt;&#x2F;li&gt;
+&lt;li&gt;Monitor DELL ???&lt;&#x2F;li&gt;
+&lt;li&gt;Keyboard Thinkpad ???&lt;&#x2F;li&gt;
+&lt;li&gt;Nextstand???&lt;&#x2F;li&gt;
+&lt;li&gt;Logitech ???&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Hardware (SET 2)&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#2&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lenovo Thinkpad X??&lt;&#x2F;li&gt;
+&lt;li&gt;Monitor DELL ???&lt;&#x2F;li&gt;
+&lt;li&gt;Keyboard Thinkpad ???&lt;&#x2F;li&gt;
+&lt;li&gt;Nextstand???&lt;&#x2F;li&gt;
+&lt;li&gt;Logitech ???&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;footnote&quot;&gt;Footnote&lt;&#x2F;h3&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;1&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;1&lt;&#x2F;sup&gt;
+&lt;p&gt;Hardware pada set pertama semuanya adalah milik kantor.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;2&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;2&lt;&#x2F;sup&gt;
+&lt;p&gt;Hardware milik sendiri.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+</description>
+      </item>
+      <item>
+          <title>Service Bawaan pada OWL</title>
+          <pubDate>Sat, 03 Feb 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>/draft-mode/odoo/owl-builtin-services/</link>
+          <guid>/draft-mode/odoo/owl-builtin-services/</guid>
+          <description></description>
+      </item>
+      <item>
+          <title>Membuat Halaman Kustom (OWL)</title>
+          <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>/draft-mode/odoo/owl-custom-page/</link>
+          <guid>/draft-mode/odoo/owl-custom-page/</guid>
+          <description>&lt;p&gt;Halaman kustom akan berguna ketika kamu ingin membuat tampilan khusus yang tidak tersedia pada mode halaman bawaan Odoo seperti form, tree, atau kanban.&lt;&#x2F;p&gt;
+&lt;p&gt;Contoh halaman yang pernah aku buat adalah halaman untuk melakukan update stok melalui tablet, halaman untuk &lt;em&gt;computer based test&lt;&#x2F;em&gt; (CBT), dan halaman yang menampilkan banyak data &#x2F; grafik seperti dashboard.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;membuat-halaman-menggunakan-komponen-owl&quot;&gt;Membuat Halaman Menggunakan Komponen OWL&lt;&#x2F;h2&gt;
+&lt;p&gt;Kamu perlu membuat sebuah komponen OWL sederhana yang akan ditampilkan saat halaman dibuka.
+Disini aku anggap kamu sudah paham &lt;a href=&quot;&#x2F;draft-mode&#x2F;odoo&#x2F;odoo-static-files&#x2F;&quot;&gt;struktur folder statis pada modul Odoo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Buat file &lt;code&gt;custom_page.js&lt;&#x2F;code&gt; di dalam folder &lt;code&gt;static&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;js&quot; style=&quot;background-color:#0f1419;color:#bfbab0;&quot; class=&quot;language-js &quot;&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;** @odoo-module **&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;{ Component } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;from &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;#39;@odoo&#x2F;owl&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;export class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;CustomPage &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;extends &lt;&#x2F;span&gt;&lt;span style=&quot;text-decoration:underline;color:#59c2ff;&quot;&gt;Component &lt;&#x2F;span&gt;&lt;span&gt;{
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;static &lt;&#x2F;span&gt;&lt;span&gt;template &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;#39;demo.custom_page&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;static &lt;&#x2F;span&gt;&lt;span&gt;components &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;{ }
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;setup&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;...
+&lt;&#x2F;span&gt;&lt;span&gt;  }
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Buat file &lt;code&gt;custom_page.xml&lt;&#x2F;code&gt; di dalam folder &lt;code&gt;static&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;xml&quot; style=&quot;background-color:#0f1419;color:#bfbab0;&quot; class=&quot;language-xml &quot;&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;xml &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;version&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;1.0&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;encoding&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;UTF-8&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;?&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;templates&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;t &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;t-name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;demo.custom_page&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;owl&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;1&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;h1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;class&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;text-center my-5&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt;Custom Page&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;h1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;t&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;templates&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;menambahkan-komponen-ke-registri-aksi&quot;&gt;Menambahkan Komponen ke Registri Aksi&lt;&#x2F;h2&gt;
+&lt;p&gt;Agar komponen yang kamu tambahkan dapat dipanggil melalui tombol aksi pada Odoo maka komponen perlu
+ter-registrasi pada action client seperti berikut ini.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;js&quot; style=&quot;background-color:#0f1419;color:#bfbab0;&quot; class=&quot;language-js &quot;&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;** @odoo-module **&#x2F;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;import &lt;&#x2F;span&gt;&lt;span&gt;{ registry } &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ff7733;&quot;&gt;from &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;#39;@web&#x2F;core&#x2F;registry&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;&#x2F;&#x2F; CustomPage component code
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;registry&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;category&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;actions&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f07178;&quot;&gt;add&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;#39;demo.custom_page&amp;#39;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span&gt;CustomPage&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span&gt;{ force&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29718;&quot;&gt;true &lt;&#x2F;span&gt;&lt;span&gt;})&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;menambahkan-aksi-klien-untuk-membuka-halaman&quot;&gt;Menambahkan Aksi Klien untuk Membuka Halaman&lt;&#x2F;h2&gt;
+&lt;p&gt;Setelah komponen ter-registrasi, tambah action client adat dapat dipanggil sebagai action.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;xml&quot; style=&quot;background-color:#0f1419;color:#bfbab0;&quot; class=&quot;language-xml &quot;&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;xml &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;version&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;1.0&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;encoding&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;?&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;odoo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;data &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;noupdate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;0&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;record &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;id&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;demo.action_client_custom_page&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;model&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;ir.actions.client&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;field &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;name&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt;Custom Page&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;field&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;field &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;type&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt;ir.actions.client&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;field&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;field &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;tag&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt;demo.custom_page&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;field&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;field &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;target&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;&lt;&#x2F;span&gt;&lt;span&gt;current&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;field&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;record&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;data&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;odoo&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Pastikan tag sesuai dengan nama ketika proses registrasi komponen pada contoh diatas adalah &lt;code&gt;demo.custom_page&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;menambahkan-tombol-untuk-membuka-halaman-kustom&quot;&gt;Menambahkan Tombol untuk Membuka Halaman Kustom&lt;&#x2F;h2&gt;
+&lt;p&gt;Untuk dapat mengakses halaman yang baru saja dibuat, tambahkan sebuah tombol atau menu yang membuka &lt;em&gt;action client&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Berikut adalah contoh tombol yang dapat kamu tambahkan pada &lt;em&gt;form&lt;&#x2F;em&gt; atau &lt;em&gt;tree view&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;xml&quot; style=&quot;background-color:#0f1419;color:#bfbab0;&quot; class=&quot;language-xml &quot;&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;button &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;name&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;%(demo.action_client_custom_page)d&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;type&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;action&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;string&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;Buka Halaman Kustom&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Atau kamu bisa menambahkan menu baru seperti berikut ini.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;xml&quot; style=&quot;background-color:#0f1419;color:#bfbab0;&quot; class=&quot;language-xml &quot;&gt;&lt;code class=&quot;language-xml&quot; data-lang=&quot;xml&quot;&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#59c2ff;&quot;&gt;menuitem &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;action&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;%(demo.action_client_custom_page)d&amp;quot; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb454;&quot;&gt;string&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bfbab0cc;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c2d94c;&quot;&gt;&amp;quot;Buka Halaman Kustom&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#39bae690;&quot;&gt;&#x2F;&amp;gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;mengakses-data-pada-actions&quot;&gt;Mengakses Data pada Actions&lt;&#x2F;h2&gt;
+&lt;p&gt;Sering kali kita memerlukan data yang ada pada action seperti active ID, context, atau atribut
+yang ada pada action untuk menampilkan data di dalam halaman kustom.&lt;&#x2F;p&gt;
+&lt;p&gt;Kamu bisa mendapatkan data action melalui &lt;code&gt;props&lt;&#x2F;code&gt; pada component. Contohnya untuk mendapatkan context
+pada action tersebut kamu bisa menggunakan:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;js&quot; style=&quot;background-color:#0f1419;color:#bfbab0;&quot; class=&quot;language-js &quot;&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span style=&quot;font-style:italic;color:#39bae6;&quot;&gt;this&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span&gt;props&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span&gt;action&lt;&#x2F;span&gt;&lt;span style=&quot;color:#f29668;&quot;&gt;.&lt;&#x2F;span&gt;&lt;span&gt;context
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Pastikan kamu ada didalam komponen OWL (yang sebelumnya telah di register) ketika mengakses &lt;code&gt;props&lt;&#x2F;code&gt; tersebut.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Isi Folder Static Odoo</title>
+          <pubDate>Thu, 01 Feb 2024 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>/draft-mode/odoo/odoo-static-files/</link>
+          <guid>/draft-mode/odoo/odoo-static-files/</guid>
+          <description></description>
+      </item>
+      <item>
+          <title>Journal Template</title>
+          <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>/draft-mode/drafts/journal/</link>
+          <guid>/draft-mode/drafts/journal/</guid>
+          <description></description>
+      </item>
+      <item>
+          <title>Snippet Template</title>
+          <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>/draft-mode/drafts/snippet/</link>
+          <guid>/draft-mode/drafts/snippet/</guid>
+          <description></description>
+      </item>
+      <item>
+          <title>Journal Template</title>
+          <pubDate>Tue, 31 Jan 2023 00:00:00 +0000</pubDate>
+          <author>Unknown</author>
+          <link>/draft-mode/journal/build-static-site-with-zola/</link>
+          <guid>/draft-mode/journal/build-static-site-with-zola/</guid>
+          <description></description>
+      </item>
+    </channel>
+</rss>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        
+        
+        
+        
+    
+    <title>
+        
+            Membuat Halaman Kustom (OWL) |
+        
+        Yahya Anwar
+    </title>
+    <link rel="icon" sizes="any" href="data:image/svg+xml,%0A%20%20%20%20%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2030%2030%22%20xmlns%3D%22http%3A&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%220%22%20y%3D%220%22%20rx%3D%223%22%20ry%3D%223%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%23CE37A8%22%20class%3D%22icon-background%22&#x2F;%3E%0A%20%20%20%20%20%20%20%20%3Ctext%20x%3D%220%22%20y%3D%220%22%20fill%3D%22%23202020%22%20font-family%3D%22sans-serif%22%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3D%229px%22%20font-weight%3D%22bold%22%20style%3D%22line-height%3A1.25%22%0A%20%20%20%20%20%20%20%20%20%20%20%20xml%3Aspace%3D%22preserve%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ctspan%20x%3D%222%22%20y%3D%2218%22%3EYHY%3C&#x2F;tspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ctspan%20x%3D%222%22%20y%3D%2228%22%3EANW%3C&#x2F;tspan%3E%0A%20%20%20%20%20%20%20%20%3C&#x2F;text%3E%0A%20%20%20%20%3C&#x2F;svg%3E%0A">
+    <style>
+        :root {
+            --primary-color: #CE37A8;
+            --secondary-color: #ffffff;
+        }
+    </style>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="header">
+        <div>
+            <a href="&#x2F;draft-mode" class="site-logo-title">
+                <img class="site-logo" src="data:image/svg+xml,%0A%20%20%20%20%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2030%2030%22%20xmlns%3D%22http%3A&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg%22%3E%0A%20%20%20%20%20%20%20%20%3Crect%20x%3D%220%22%20y%3D%220%22%20rx%3D%223%22%20ry%3D%223%22%20width%3D%2230%22%20height%3D%2230%22%20fill%3D%22%23CE37A8%22%20class%3D%22icon-background%22&#x2F;%3E%0A%20%20%20%20%20%20%20%20%3Ctext%20x%3D%220%22%20y%3D%220%22%20fill%3D%22%23202020%22%20font-family%3D%22sans-serif%22%0A%20%20%20%20%20%20%20%20%20%20%20%20font-size%3D%229px%22%20font-weight%3D%22bold%22%20style%3D%22line-height%3A1.25%22%0A%20%20%20%20%20%20%20%20%20%20%20%20xml%3Aspace%3D%22preserve%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ctspan%20x%3D%222%22%20y%3D%2218%22%3EYHY%3C&#x2F;tspan%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Ctspan%20x%3D%222%22%20y%3D%2228%22%3EANW%3C&#x2F;tspan%3E%0A%20%20%20%20%20%20%20%20%3C&#x2F;text%3E%0A%20%20%20%20%3C&#x2F;svg%3E%0A" alt="Site Logo">
+                <div>
+                    <strong> Yahya Anwar </strong>
+                </div>
+            </a>
+            <div class="lang">
+                
+                    
+                        
+                            <a href="&#x2F;draft-mode&#x2F;odoo&#x2F;owl-custom-page&#x2F;" class="active">
+                                id
+                            </a>
+                        
+                    
+                
+            </div>
+        </div>
+        <div class="links">
+            
+                <a href="https:&#x2F;&#x2F;twitter.com&#x2F;yhyanw"
+                     target="_blank" 
+                    
+                >Twitter &#x2F; X</a>
+            
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;yahyaanwar"
+                     target="_blank" 
+                    
+                >Github</a>
+            
+                <a href="https:&#x2F;&#x2F;mstdn.social&#x2F;@yhy"
+                     target="_blank" 
+                     rel="me" 
+                >Mastodon</a>
+            
+        </div>
+    </nav>
+    <main>
+    
+<div class="content">
+  <section>
+    <div class="breadcrumb">
+      
+        
+        <a href="/draft-mode">Beranda</a>
+        <span>/</span>
+      
+        
+        <a href="/draft-mode/odoo">Odoo</a>
+        <span>/</span>
+      
+      Membuat Halaman Kustom (OWL)
+      
+          <sub>draft</sub>
+      
+    </div>
+  </section>
+  <section>
+    
+      <strong class="metadata">02 February 2024</strong>
+    
+    <h1 class="title">
+      Membuat Halaman Kustom (OWL)
+    </h1>
+    <p>
+      <i>Membuat halaman kustom pada Odoo 16 menggunakan komponen OWL.
+</i>
+    </p>
+  </section>
+  
+  <section class="page" style="min-height: 45vh">
+    <p>Halaman kustom akan berguna ketika kamu ingin membuat tampilan khusus yang tidak tersedia pada mode halaman bawaan Odoo seperti form, tree, atau kanban.</p>
+<p>Contoh halaman yang pernah aku buat adalah halaman untuk melakukan update stok melalui tablet, halaman untuk <em>computer based test</em> (CBT), dan halaman yang menampilkan banyak data / grafik seperti dashboard.</p>
+<h2 id="membuat-halaman-menggunakan-komponen-owl">Membuat Halaman Menggunakan Komponen OWL</h2>
+<p>Kamu perlu membuat sebuah komponen OWL sederhana yang akan ditampilkan saat halaman dibuka.
+Disini aku anggap kamu sudah paham <a href="/draft-mode/odoo/odoo-static-files/">struktur folder statis pada modul Odoo</a>.</p>
+<p>Buat file <code>custom_page.js</code> di dalam folder <code>static</code>.</p>
+<pre data-lang="js" style="background-color:#0f1419;color:#bfbab0;" class="language-js "><code class="language-js" data-lang="js"><span style="font-style:italic;color:#5c6773;">/** @odoo-module **/
+</span><span>
+</span><span style="color:#ff7733;">import </span><span>{ Component } </span><span style="color:#ff7733;">from </span><span style="color:#c2d94c;">&#39;@odoo/owl&#39;</span><span style="color:#bfbab0cc;">;
+</span><span>
+</span><span style="color:#ff7733;">export class </span><span style="color:#59c2ff;">CustomPage </span><span style="color:#ff7733;">extends </span><span style="text-decoration:underline;color:#59c2ff;">Component </span><span>{
+</span><span>  </span><span style="color:#ff7733;">static </span><span>template </span><span style="color:#f29668;">= </span><span style="color:#c2d94c;">&#39;demo.custom_page&#39;</span><span style="color:#bfbab0cc;">;
+</span><span>  </span><span style="color:#ff7733;">static </span><span>components </span><span style="color:#f29668;">= </span><span>{ }
+</span><span>
+</span><span>  </span><span style="color:#ffb454;">setup</span><span>() {
+</span><span>    </span><span style="color:#f29668;">...
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<p>Buat file <code>custom_page.xml</code> di dalam folder <code>static</code>.</p>
+<pre data-lang="xml" style="background-color:#0f1419;color:#bfbab0;" class="language-xml "><code class="language-xml" data-lang="xml"><span style="color:#39bae690;">&lt;?</span><span style="color:#59c2ff;">xml </span><span style="color:#ffb454;">version</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;1.0&quot; </span><span style="color:#ffb454;">encoding</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;UTF-8&quot;</span><span style="color:#39bae690;">?&gt;
+</span><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">templates</span><span style="color:#39bae690;">&gt;
+</span><span>  </span><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">t </span><span style="color:#ffb454;">t-name</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;demo.custom_page&quot; </span><span style="color:#ffb454;">owl</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;1&quot;</span><span style="color:#39bae690;">&gt;
+</span><span>    </span><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">h1 </span><span style="color:#ffb454;">class</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;text-center my-5&quot;</span><span style="color:#39bae690;">&gt;</span><span>Custom Page</span><span style="color:#39bae690;">&lt;/</span><span style="color:#59c2ff;">h1</span><span style="color:#39bae690;">&gt;
+</span><span>  </span><span style="color:#39bae690;">&lt;/</span><span style="color:#59c2ff;">t</span><span style="color:#39bae690;">&gt;
+</span><span style="color:#39bae690;">&lt;/</span><span style="color:#59c2ff;">templates</span><span style="color:#39bae690;">&gt;
+</span></code></pre>
+<h2 id="menambahkan-komponen-ke-registri-aksi">Menambahkan Komponen ke Registri Aksi</h2>
+<p>Agar komponen yang kamu tambahkan dapat dipanggil melalui tombol aksi pada Odoo maka komponen perlu
+ter-registrasi pada action client seperti berikut ini.</p>
+<pre data-lang="js" style="background-color:#0f1419;color:#bfbab0;" class="language-js "><code class="language-js" data-lang="js"><span style="font-style:italic;color:#5c6773;">/** @odoo-module **/
+</span><span>
+</span><span style="color:#ff7733;">import </span><span>{ registry } </span><span style="color:#ff7733;">from </span><span style="color:#c2d94c;">&#39;@web/core/registry&#39;</span><span style="color:#bfbab0cc;">;
+</span><span>
+</span><span style="font-style:italic;color:#5c6773;">// CustomPage component code
+</span><span>
+</span><span>registry</span><span style="color:#f29668;">.</span><span style="color:#ffb454;">category</span><span>(</span><span style="color:#c2d94c;">&quot;actions&quot;</span><span>)</span><span style="color:#f29668;">.</span><span style="color:#f07178;">add</span><span>(</span><span style="color:#c2d94c;">&#39;demo.custom_page&#39;</span><span style="color:#bfbab0cc;">, </span><span>CustomPage</span><span style="color:#bfbab0cc;">, </span><span>{ force</span><span style="color:#bfbab0cc;">: </span><span style="color:#f29718;">true </span><span>})</span><span style="color:#bfbab0cc;">;
+</span></code></pre>
+<h2 id="menambahkan-aksi-klien-untuk-membuka-halaman">Menambahkan Aksi Klien untuk Membuka Halaman</h2>
+<p>Setelah komponen ter-registrasi, tambah action client adat dapat dipanggil sebagai action.</p>
+<pre data-lang="xml" style="background-color:#0f1419;color:#bfbab0;" class="language-xml "><code class="language-xml" data-lang="xml"><span style="color:#39bae690;">&lt;?</span><span style="color:#59c2ff;">xml </span><span style="color:#ffb454;">version</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;1.0&quot; </span><span style="color:#ffb454;">encoding</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;utf-8&quot;</span><span style="color:#39bae690;">?&gt;
+</span><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">odoo</span><span style="color:#39bae690;">&gt;
+</span><span>  </span><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">data </span><span style="color:#ffb454;">noupdate</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;0&quot;</span><span style="color:#39bae690;">&gt;
+</span><span>    </span><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">record </span><span style="color:#ffb454;">id</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;demo.action_client_custom_page&quot; </span><span style="color:#ffb454;">model</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;ir.actions.client&quot;</span><span style="color:#39bae690;">&gt;
+</span><span>      </span><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">field </span><span style="color:#ffb454;">name</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;name&quot;</span><span style="color:#39bae690;">&gt;</span><span>Custom Page</span><span style="color:#39bae690;">&lt;/</span><span style="color:#59c2ff;">field</span><span style="color:#39bae690;">&gt;
+</span><span>      </span><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">field </span><span style="color:#ffb454;">name</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;type&quot;</span><span style="color:#39bae690;">&gt;</span><span>ir.actions.client</span><span style="color:#39bae690;">&lt;/</span><span style="color:#59c2ff;">field</span><span style="color:#39bae690;">&gt;
+</span><span>      </span><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">field </span><span style="color:#ffb454;">name</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;tag&quot;</span><span style="color:#39bae690;">&gt;</span><span>demo.custom_page</span><span style="color:#39bae690;">&lt;/</span><span style="color:#59c2ff;">field</span><span style="color:#39bae690;">&gt;
+</span><span>      </span><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">field </span><span style="color:#ffb454;">name</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;target&quot;</span><span style="color:#39bae690;">&gt;</span><span>current</span><span style="color:#39bae690;">&lt;/</span><span style="color:#59c2ff;">field</span><span style="color:#39bae690;">&gt;
+</span><span>    </span><span style="color:#39bae690;">&lt;/</span><span style="color:#59c2ff;">record</span><span style="color:#39bae690;">&gt;
+</span><span>  </span><span style="color:#39bae690;">&lt;/</span><span style="color:#59c2ff;">data</span><span style="color:#39bae690;">&gt;
+</span><span style="color:#39bae690;">&lt;/</span><span style="color:#59c2ff;">odoo</span><span style="color:#39bae690;">&gt;
+</span></code></pre>
+<p>Pastikan tag sesuai dengan nama ketika proses registrasi komponen pada contoh diatas adalah <code>demo.custom_page</code>.</p>
+<h2 id="menambahkan-tombol-untuk-membuka-halaman-kustom">Menambahkan Tombol untuk Membuka Halaman Kustom</h2>
+<p>Untuk dapat mengakses halaman yang baru saja dibuat, tambahkan sebuah tombol atau menu yang membuka <em>action client</em>.</p>
+<p>Berikut adalah contoh tombol yang dapat kamu tambahkan pada <em>form</em> atau <em>tree view</em>.</p>
+<pre data-lang="xml" style="background-color:#0f1419;color:#bfbab0;" class="language-xml "><code class="language-xml" data-lang="xml"><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">button </span><span style="color:#ffb454;">name</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;%(demo.action_client_custom_page)d&quot; </span><span style="color:#ffb454;">type</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;action&quot;
+</span><span>        </span><span style="color:#ffb454;">string</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;Buka Halaman Kustom&quot;</span><span style="color:#39bae690;">/&gt;
+</span></code></pre>
+<p>Atau kamu bisa menambahkan menu baru seperti berikut ini.</p>
+<pre data-lang="xml" style="background-color:#0f1419;color:#bfbab0;" class="language-xml "><code class="language-xml" data-lang="xml"><span style="color:#39bae690;">&lt;</span><span style="color:#59c2ff;">menuitem </span><span style="color:#ffb454;">action</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;%(demo.action_client_custom_page)d&quot; </span><span style="color:#ffb454;">string</span><span style="color:#bfbab0cc;">=</span><span style="color:#c2d94c;">&quot;Buka Halaman Kustom&quot;</span><span style="color:#39bae690;">/&gt;
+</span></code></pre>
+<h2 id="mengakses-data-pada-actions">Mengakses Data pada Actions</h2>
+<p>Sering kali kita memerlukan data yang ada pada action seperti active ID, context, atau atribut
+yang ada pada action untuk menampilkan data di dalam halaman kustom.</p>
+<p>Kamu bisa mendapatkan data action melalui <code>props</code> pada component. Contohnya untuk mendapatkan context
+pada action tersebut kamu bisa menggunakan:</p>
+<pre data-lang="js" style="background-color:#0f1419;color:#bfbab0;" class="language-js "><code class="language-js" data-lang="js"><span style="font-style:italic;color:#39bae6;">this</span><span style="color:#f29668;">.</span><span>props</span><span style="color:#f29668;">.</span><span>action</span><span style="color:#f29668;">.</span><span>context
+</span></code></pre>
+<p>Pastikan kamu ada didalam komponen OWL (yang sebelumnya telah di register) ketika mengakses <code>props</code> tersebut.</p>
+
+    <i><center>~ The End ~</center></i>
+  </section>
+  <section>
+    
+      
+      
+        
+<section>
+    <div class="section-title">Topik</div>
+    <div class="topics">
+        
+        
+        
+        <a href="/draft-mode/odoo">
+            <article class="topic" style="color: #fafafa">
+                <div class="description">
+                    <div class="title" style="color: #CE37A8">
+                        Odoo
+                    </div>
+                    Odoo teknikal.
+
+                </div>
+                
+            </article>
+        </a>
+        
+        
+        
+        
+        <a href="/draft-mode/journal">
+            <article class="topic" style="color: #F7E5DA">
+                <div class="description">
+                    <div class="title" style="color: #FFA360">
+                        Jurnal
+                    </div>
+                    Tulisan tentang apapun.
+
+                </div>
+                
+            </article>
+        </a>
+        
+        
+        
+        
+        
+        
+        
+        <a href="/draft-mode/drafts">
+            <article class="topic" style="color: #fafafa">
+                <div class="description">
+                    <div class="title" style="color: #ffffff">
+                        Drafts
+                    </div>
+                    Draft dan template yang bisa dicopas.
+
+                </div>
+                
+            </article>
+        </a>
+        
+        
+    </div>
+</section>
+
+      
+    
+      
+      
+    
+  </section>
+</div>
+
+    </main>
+    <footer>
+        Copyright © 2024 Yahya Anwar Ramadhan
+    </footer>
+    <img id="alien" src="/easter-eggs/ufo.png" width="40px" height="40px">
+    <link rel="stylesheet" href="/easter-eggs/style.css">
+    <script src="/easter-eggs/script.js"></script>
+</body>
+</html>
